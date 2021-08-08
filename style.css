@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("![banner](https://user-images.githubusercontent.com/78583260/128647601-9a7e9328-59c8-4c4a-aa96-ee07abbfe3ec.jpg)") no-repeat center;
+    background: url("banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
