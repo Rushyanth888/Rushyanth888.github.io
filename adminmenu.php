@@ -1,4 +1,11 @@
+<?php
+ session_start();
+ if (isset($_SESSION['username']) && ($_SESSION['id']))
+ {
 
+ }
+ else {
+   ?>
    <!DOCTYPE html>
   <html>
   <head>
@@ -9,8 +16,16 @@
       <META HTTP-EQUIV="Content-Type" CONTENT="text/html"; charset="utf-8" />
     </head>
     <body>
-      <div class="grid">
+      <div class="grid"><br><br><br><br><br><br><br><br><br><br>
+  <?php echo 'நீங்கள் அட்மின்னாக இருந்தால் லாகின் பெயர் மற்றும் பாஸ்வோர்ட் கொடுத்தால் மட்டுமே உங்களால் இந்த பக்கத்தை பார்க்க முடியும்';
+  echo '<a href="adminlogin.php"> login First</a>';
+   ?><br><br><br><br>
+  <?php echo 'நீங்கள் user ஆக இருந்தால் இந்த பக்கத்தை பார்க்க முடியாது';
+   echo '<a href="adminlogin.php"> login First</a>';
+   die();
+ }
 
+ ?>
  <!DOCTYPE html>
 <html>
 <head>
